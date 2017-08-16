@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Choco Buddies &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Datetimepicker -->
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    
+<!-- Plugin JavaScript -->
+    
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<style>
+
+.fnt{
+color:black;
+	<!--text-shadow: 0 1px 0 #CCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAA, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)-->
+
+}
+
+.bck{
+	background: #D6BD94 url(http://i.imgur.com/miFxa.jpg) 50% 40px no-repeat;
+	-webkit-animation: bgscroll 30s alternate infinite linear;
+	-moz-animation: bgscroll 30s alternate infinite linear;
+	-ms-animation: bgscroll 30s alternate infinite linear;
+}
+
+
+@-webkit-keyframes bgscroll {
+	0%		{ background-position: 5% 40px; }
+	100%	{ background-position: 95% 40px; }
+}
+
+@-webkit-keyframes rotateinfinite {
+	0%		{ -webkit-transform: rotate(0deg); }
+	100%	{ -webkit-transform: rotate(350deg); }
+}
+
+@-moz-keyframes bgscroll {
+	0%		{ background-position: 5% 40px; }
+	100%	{ background-position: 95% 40px; }
+}
+
+@-moz-keyframes rotateinfinite {
+	0%		{ -moz-transform: rotate(0deg); }
+	100%	{ -moz-transform: rotate(350deg); }
+}
+
+@-ms-keyframes bgscroll {
+	0%		{ background-position: 5% 40px; }
+	100%	{ background-position: 95% 40px; }
+}
+
+@-ms-keyframes rotateinfinite {
+	0%		{ -ms-transform: rotate(0deg); }
+	100%	{ -ms-transform: rotate(350deg); }
+}
+
+
+
+	#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.w3-teal, .w3-hover-teal:hover {
+    
+    background-color: #331717!important;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.form-control{
+
+    border: 1px solid #907d7d;
+	
+}
+</style>
+	</head>
+	<body>
+
+	<div id="fh5co-container">
+	
+		<div id="fh5co-home" class="js-fullheight" data-section="home">
+
+			<div class="flexslider">
+				
+				<div class="fh5co-overlay"></div>
+				<div class="fh5co-text">
+					<div class="container">
+						<div class="row">
+							<h1 class="to-animate"style="font-size: 179px;-weight: 600;">Choco Buddies</h1>
+							
+							<h2 class="to-animate">&ldquo;<span style="font-family: cursive;">There is nothing better than a friend,unless it is a <span style="color:#fb6e14;">friend with chocalates&rdquo;</span></span></h2>
+						
+						</div>
+					</div>
+				</div>
+				
+									
+								
+			  	<ul class="slides">
+			   	<li style="background-image: url(choco/DSC_0536.jpg);" data-stellar-background-ratio="0.5"></li>
+			   	<li style="background-image: url(choco/DSC_0508.jpg);" data-stellar-background-ratio="0.5"></li>
+			   	<li style="background-image: url(choco/DSC_0509.jpg);" data-stellar-background-ratio="0.5"></li>
+			  	</ul>
+				
+
+			</div>
+			
+		</div>
+		
+		<div class="js-sticky">
+			<div class="fh5co-main-nav">
+				<div class="container-fluid">
+					<div class="fh5co-menu-1">
+						<a href="#" data-nav-section="home">Home</a>
+						<a href="#" data-nav-section="about">About</a>
+						<a href="#" data-nav-section="features">Features</a>
+					</div>
+					<div class="fh5co-logo">
+						<a href="index.html" style="font-size:30px;">Choco Buddies</a>
+					</div>
+					<div class="fh5co-menu-2">
+						<!--<a href="#" data-nav-section="menu">Menu</a>-->
+						<a href="#" data-nav-section="events">Events</a>
+						<a href="#" data-nav-section="reservation">Order</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="fh5co-about" data-section="about">
+			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(choco/25401959.jpg)"></div>
+			<div class="fh5co-2col fh5co-text">
+				<h2 class="heading to-animate">About Us</h2>
+				<p class="to-animate "><span class="firstcharacter">I</span>f&nbsp;you know something good then why not share it with others, afterall happiness is all which matters and it increases by sharing.
+Spreading happiness is all our motto. 
+
+This is how it all started:
+To impress a girl one of our friend (a good cook) made some chocolates and sent it to his girl. To make a good impression on her, he asked her 
+what all different kind of chocolates you like (like he knows everything) and as you know about girls, she named 5-6 different kind of chocolates. Then his struggle started
+and he researched about different kind of chocolates and how they can be made at home. Finally, he gifted her all kind of chocolates which she said and it was a happy ending :).
+After looking at his success our another friend followed the same path and it was also a happy ending.
+ 
+We then decided we can share this happiness with others and have more success stories. So, we started making chocolates at our home and started sharing it. Everyone 
+gave good feedback on our chocolates and we finally decided to reach out to everyone and then we started spreading happiness.
+
+<h3 class="heading to-animate">These are our guiding principles :</h3>
+
+<ul style="color: #a1958c;">
+<li> The quality of product should not be compromised in any case.</li>
+<li> Taste should be like, if someone eats one should remember us always.</li>
+<li>We are excited about building strong relationships with everyone we interact with: our customers, our community, and our suppliers.</li>
+<li>We want to improve everyday and be the best in taste.</li>
+</ul>
+				<p  class="text-center to-animate"><a href="#" id="someID" class="btn btn-primary btn-outline">Get in touch</a></p>
+			</div>
+		</div>
+
+		<div id="fh5co-sayings">
+			<div class="container">
+				<div class="row to-animate">
+
+					<div class="flexslider">
+						<ul class="slides">
+							
+							<li>
+								<blockquote>
+									<p>&ldquo;If God gives you chocolate, you open your mouth, no? &rdquo;</p>
+									<p class="quote-author">&mdash; Alejandro Jodorowsky</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Forget love I'd rather fall in chocolate.&rdquo;</p>
+									<p class="quote-author">&mdash; Unknown</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Laughter may be the best medicine but sometimes you need a dose of chocalate.&rdquo;</p>
+									<p class="quote-author">&mdash; Unknown</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Chocolate is not cheating! After a salty meal, you need a little bit of sweet. This is living, not cheating.&rdquo;</p>
+									<p class="quote-author">&mdash; Ali Landry</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Chocolate is not an addiction, It is simply a real necessity.&rdquo;</p>
+									<p class="quote-author">&mdash; Unknown</p>
+								</blockquote>
+							</li>
+							
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div  data-section="features" style="background-color: #d6bd94">
+			<div  id="fh5co-featured"class="fluid-container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="heading to-animate">Featured varieties</h2>
+						<p class="sub-heading to-animate">"Chocolate is cheaper than therapy, and you don’t need an appointment."</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="fh5co-grid">
+						<div class="fh5co-v-half to-animate-2">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_1.jpg)"></div>
+							<div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+								<h2></h2>
+								<span class="pricing">7.50 &#8377;</span>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+						<div class="fh5co-v-half">
+							<div class="fh5co-h-row-2 to-animate-2">
+								<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_2.jpg)"></div>
+								<div class="fh5co-v-col-2 fh5co-text arrow-left">
+									<h2></h2>
+									<span class="pricing">12.00 &#8377;</span>
+									<p>Far far away, behind the word mountains.</p>
+								</div>
+							</div>
+							<div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+								<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_8.jpg)"></div>
+								<div class="fh5co-v-col-2 fh5co-text arrow-right">
+									<h2></h2>
+									<span class="pricing">4.50 &#8377;</span>
+									<p>Far far away, behind the word mountains.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="fh5co-v-half">
+							<div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+								<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_7.jpg)"></div>
+								<div class="fh5co-v-col-2 fh5co-text arrow-right">
+									<h2></h2>
+									<span class="pricing">4.99 &#8377;</span>
+									<p>Far far away, behind the word mountains.</p>
+								</div>
+							</div>
+							<div class="fh5co-h-row-2 to-animate-2">
+								<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_6.jpg)"></div>
+								<div class="fh5co-v-col-2 fh5co-text arrow-left">
+									<h2></h2>
+									<span class="pricing">8.50 &#8377;</span>
+									<p>Far far away, behind the word mountains.</p>
+								</div>
+							</div>
+						</div>
+						<div class="fh5co-v-half to-animate-2">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_3.jpg)"></div>
+							<div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+								<h2></h2>
+								<span class="pricing">12.99 &#8377;</span>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+						<div class="fh5co-v-half to-animate-2">
+						
+
+
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="row">
+			<section>
+					<div class="col-md-4 col-md-offset-4 text-center to-animate-2" style="margin-top: 17px;">
+						<p><a href="choco/new_menu1.jpg" data-lightbox="example-1" class="btn btn-primary btn-outline"><img class="example-image" src=""  />Chocolate Menu</a></p>
+					</div>
+					</section>
+				</div>
+			
+		</div>
+
+<!--<div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							<h3 class="with-icon icon-1">Fruits</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							<h3 class="with-icon icon-2">Sea food</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							<h3 class="with-icon icon-3">Vegetables</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							<h3 class="with-icon icon-4">Meat</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>        
+
+	<!--	<div id="fh5co-menus" data-section="menu">
+			<div class="container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="heading to-animate">Food Menu</h2>
+						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div>
+				</div>
+				<div class="row row-padded">
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<h2 class="fh5co-drinks">Drinks</h2>
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Pineapple Juice</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$17.50
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Green Juice</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$7.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Soft Drinks</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Carlo Rosee Drinks</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<h2 class="fh5co-dishes">Steak</h2>
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Beef Steak</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$17.50
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Tomato with Chicken</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$7.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Sausages from Italy</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Beef Grilled</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<h2 class="fh5co-drinks">Drinks</h2>
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Pineapple Juice</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$17.50
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Green Juice</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$7.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Soft Drinks</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Carlo Rosee Drinks</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<h2 class="fh5co-dishes">Steak</h2>
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Beef Steak</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$17.50
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Tomato with Chicken</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$7.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Sausages from Italy</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										<figure>
+											<img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+										</figure>
+										<div>
+											<h3>Beef Grilled</h3>
+											<p>Far far away, behind the word mountains.</p>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										$12.99
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 text-center to-animate-2">
+					
+				
+						<p><a href="choco/new_menu1.jpg" data-lightbox="example-1" class="btn btn-primary btn-outline"><img class="example-image" src=""  />More Food Menu</a></p>
+					</div>
+				</div>
+			</div>
+		</div>-->
+
+		<div id="fh5co-events" data-section="events" style="background-image: url(choco/DSC_0545.jpg);" data-stellar-background-ratio="0.5">
+		
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2 to-animate">
+					
+						<h2 class="heading frame-1">Upcoming Events</h2>
+						<p class="sub-heading">"Life is like a box of chocolates ... you never know what you’re gonna get." – Forrest Gump.</p>
+					</div>
+				</div>
+				<div class="row">
+				
+					<div class="col-md-4">
+						<div class="fh5co-event to-animate-2  ">
+							<h3 class="fh5co-event-meta">Love & Warm Wishes On Raksha Bandhan!</h3>
+							
+							
+							<p style="    color: #fb9d61;">&ldquo;Pamper your brother with our exclusive  Raksha Bandhan chocolates, which are hand made and tell him how special he is....&rdquo;</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4"  >
+						<div class="fh5co-event to-animate-2" >
+							<h3 class="fh5co-event-meta">Comming Soon</h3>
+							<br>
+							<!--<span class="fh5co-event-meta">March 19th, 2016</span>-->
+							<h4>SOMTHING <br>
+							NEW <br>
+							IS ON <br>
+							<span style="color: #fb6e14;">ITS WAY...</span></h4>
+							
+							
+						</div>
+					</div>
+					<div class="col-md-4 ">
+						<div class="fh5co-event to-animate-2">
+							<h3 class="fh5co-event-meta">Comming Soon</h3>
+							<br>
+							
+							<h4>SOMTHING <br>
+							NEW <br>
+							IS ON <br>
+							<span style="color: #fb6e14;">ITS WAY...</span></h4>
+							<!--<p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-contact" data-section="reservation" class="bck fnt">
+			<div class="container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="heading to-animate">Book an Order</h2>
+						<p class="sub-heading to-animate"style="    color: #fff;">Once you consume CHOCOLATE, CHOCOLATE will consume you.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 to-animate-2">
+						<h3 >Contact Info</h3>
+						<ul class="fh5co-contact-info">
+							<li class="fh5co-contact-address ">
+								<i class="icon-home"></i>
+								Thane west-400608 <br>
+							</li>
+							<li><i class="icon-phone"></i> (+91) 7666426363/9029133144</li>
+							<li><i class="icon-envelope"></i>thechocobuddy@gmail.com</li>
+							<!--<li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>-->
+						</ul>
+					</div>
+					<div class="col-md-6 to-animate-2" >
+						<h3>Reservation Order</h3>
+						<div class="form-group ">
+							<label for="name" class="sr-only">Name</label>
+							<input id="name" class="form-control"  style="color:white;" placeholder="Name" type="text">
+						</div>
+						<div class="form-group ">
+							<label for="email" class="sr-only">Email</label>
+							<input id="email" class="form-control" style="color:white;" placeholder="Email" type="email">
+						</div>
+						<div class="form-group" >
+							<label for="occation" class="sr-only">Occation</label>
+							<select class="form-control"  style="color: #8d8d8d;"  id="occation">
+								<option>Select an Occation</option>
+							  <option>Wedding Ceremony</option>
+							  <option>Birthday</option>
+							  <option>Others</option>
+							</select>
+						</div>
+						<div class="form-group ">
+							<label for="date" class="sr-only">Date</label>
+							<input id="date" class="form-control" style="color:white;" placeholder="Date &amp; Time" type="text">
+						</div>
+
+
+							
+						<div class="form-group ">
+							<label for="message" class="sr-only">Message</label>
+							<textarea name="" style="color:white;" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group ">
+							<input class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" value="Send Message" type="submit">
+						</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+	<div id="fh5co-footer" style="background: #130d08 url(../images/wood_1.png) repeat;">
+		<div class="container">
+			<div class="row row-padded">
+				<div class="col-md-12 text-center">
+					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
+					</p>
+					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+				
+					<ul class="fh5co-social">
+						<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+						<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+						<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul>
+				</div>
+				<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+			</div>
+		</div>
+	</div>
+
+<div id="id01" class="w3-modal  w3-animate-opacity" style="">
+    <div class="w3-modal-content  w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 style="    font-family: fantasy;text-align: center; color: white;">Choco Buddies</h2>
+      </header>
+      <div class="w3-container">
+       <strong>Sorry for inconvenience,this feature is coming soon... To place an order please contact us on <span style="color:#342f63;">7666426363/9029133144</span>.</strong>
+        
+      </div>
+      <footer class="w3-container w3-teal">
+        <p style="color:#331717!important;">Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+	
+	
+	
+	 <script src="js/lightbox-plus-jquery.min.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap DateTimePicker -->
+	<script src="js/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	
+
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script>
+		$(function () {
+	       $('#date').datetimepicker();
+	   });
+	</script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	
+<script>
+
+
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+
+
+    if ($(this).scrollTop() >= 50) {  
+
+	// If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+</script>
+<script>
+$(document).ready(function() {
+   
+    $('#someID').click(function(){
+	
+        $('html, body').animate({
+        'scrollTop' : $("#fh5co-contact").position().top
+    }, 2000);
+		
+       
+    });
+
+});
+</script>
+	</body>
+	
+</html>
+
